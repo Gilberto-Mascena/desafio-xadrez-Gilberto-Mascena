@@ -4,9 +4,30 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
-int main() {
+int main()
+{
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+
+    int movimentoTorre;
+
+    printf("Quantas casas deseja mover a Torre? ");
+    scanf("%d", &movimentoTorre);
+
+    /*
+    Operação ternária para verificar se o movimento da Torre é maior que 1
+    e imprimir a mensagem correspondente.
+    A operação ternária é uma forma concisa de escrever uma condição if-else.
+    */
+    printf(movimentoTorre > 1 ? "\nTorre se movendo %d casas para a direita!\n" : "Torre se movevendo %d casa para a direita!\n", movimentoTorre);
+
+    printf("\n");
+
+    // Loop para simular a movimentação da Torre
+    for (int i = 0; i < movimentoTorre; i++)
+    {
+        printf("Torre se moveu %d casa para a direita.\n", i + 1);
+    }
 
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.

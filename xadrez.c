@@ -9,7 +9,7 @@ int main()
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    int movimentoTorre;
+    int movimentoTorre, movimentoBispo;
 
     printf("Quantas casas deseja mover a Torre? ");
     scanf("%d", &movimentoTorre);
@@ -29,8 +29,25 @@ int main()
         printf("Torre se moveu %d casa para a direita.\n", i + 1);
     }
 
+    printf("\n-------------------------------------------------------------------\n");
+
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+
+    printf("Quantas casas deseja mover o Bispo? ");
+    scanf("%d", &movimentoBispo);
+
+    printf(movimentoBispo > 1 ? "\nBispo se movendo %d casas em diagonal!\n" : "Bispo se movendo %d casa em diagonal!\n", movimentoBispo);
+
+    printf("\n");
+
+    // Loop para simular a movimentação do Bispo
+    for (int i = 0; i < movimentoBispo; i++)
+    {
+        printf("Bispo se moveu %d casa em diagonal.\n", i + 1);
+    }
+
+    printf("\n-------------------------------------------------------------------\n");
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.

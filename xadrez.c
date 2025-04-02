@@ -44,10 +44,12 @@ int main()
 
     printf("\n");
 
-    // Loop para simular a movimentação do Bispo
-    for (int i = 0; i < movimentoBispo; i++)
+    int i = 0;
+    // Loop while para simular a movimentação do Bispo
+    while (i < movimentoBispo)
     {
         printf("Bispo se moveu %d casa em diagonal.\n", i + 1);
+        i++;
     }
 
     printf("\n-------------------------------------------------------------------\n");
@@ -62,13 +64,13 @@ int main()
 
     printf("\n");
 
-    int i = 0;
+    int j = 0;
     // Loop do-while para simular a movimentação da Rainha
     do
     {
-        printf("Rainha se moveu %d casa para a esquerda.\n", i + 1);
-        i++;
-    } while (i < movimentoRainha);
+        printf("Rainha se moveu %d casa para a esquerda.\n", j + 1);
+        j++;
+    } while (j < movimentoRainha);
     printf("\n-------------------------------------------------------------------\n");
 
     // Nível Aventureiro - Movimentação do Cavalo

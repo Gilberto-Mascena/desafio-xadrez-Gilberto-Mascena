@@ -50,23 +50,25 @@ int main()
         printf("Bispo se moveu %d casa em diagonal.\n", i + 1);
     }
 
-    printf("\n-------------------------------------------------------------------\n");    
+    printf("\n-------------------------------------------------------------------\n");
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
     printf("Quantas casas deseja mover a Rainha? ");
-    scanf("%d", &movimentoRainha);  
+    scanf("%d", &movimentoRainha);
 
     printf(movimentoRainha > 1 ? "\nRainha se movendo %d casas para a esquerda!\n" : "Rainha se movendo %d casa para a esquerda!\n", movimentoRainha);
 
     printf("\n");
 
-    // Loop para simular a movimentação da Rainha
-    for (int i = 0; i < movimentoRainha; i++)
+    int i = 0;
+    // Loop do-while para simular a movimentação da Rainha
+    do
     {
         printf("Rainha se moveu %d casa para a esquerda.\n", i + 1);
-    }
+        i++;
+    } while (i < movimentoRainha);
     printf("\n-------------------------------------------------------------------\n");
 
     // Nível Aventureiro - Movimentação do Cavalo
